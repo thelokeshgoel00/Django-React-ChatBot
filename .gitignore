@@ -14,6 +14,7 @@ chatSite/*.pyc
 chatSite/__pycache__
 chatSite/db.sqlite3
 chatSite/media
+chatapp/static/dataset
 # Backup files # 
 *.bak 
 
