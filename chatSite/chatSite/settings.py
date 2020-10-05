@@ -25,7 +25,7 @@ SECRET_KEY = 'mx@!x1r7$i4z50607p3yvt@_a-3gdkd^1i8g%_#rd#u3h)dgi&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', '192.168.1.6']
 
 
 # Application definition
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'chatapp',
     'corsheaders',
     'rest_framework',
-
 ]
 
 MIDDLEWARE = [
@@ -126,6 +125,7 @@ USE_TZ = True
 STATIC_ROOT = BASE_DIR / 'chatapp/static'
 STATIC_URL = '/static/'
 
-# CORS_ORIGIN_WHITELIST = (
-#     'localhost:3000'
-# )
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://192.168.1.6:3000'
+]
